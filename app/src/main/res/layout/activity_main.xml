@@ -122,6 +122,57 @@
         android:layout_toRightOf="@+id/lblEType"
         android:layout_below="@id/lblEId"
         />
+    <TextView
+        android:id="@+id/lblPNo"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Project #"
+        android:layout_below="@+id/lblEType"
+        android:gravity="center"
+        android:visibility="gone"/>
+    <EditText
+        android:id="@+id/txtPNo"
+        android:inputType="number"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:hint="project#"
+        android:layout_toRightOf="@+id/lblPNo"
+        android:layout_below="@+id/lblEType"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/lblCNo"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Client #"
+        android:layout_below="@+id/lblEType"
+        android:gravity="center"
+        android:visibility="gone"/>
+    <EditText
+        android:id="@+id/txtCNo"
+        android:inputType="number"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:hint="client#"
+        android:layout_toRightOf="@+id/lblCNo"
+        android:layout_below="@+id/lblEType"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/lblBNo"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Bugs #"
+        android:layout_below="@+id/lblEType"
+        android:gravity="center"
+        android:visibility="gone"/>
+    <EditText
+        android:id="@+id/txtBNo"
+        android:inputType="number"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:hint="bugs#"
+        android:layout_toRightOf="@+id/lblBNo"
+        android:layout_below="@+id/lblEType"
+        android:visibility="gone"/>
 
 
 </ScrollView>
