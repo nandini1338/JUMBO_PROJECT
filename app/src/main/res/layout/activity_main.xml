@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lblReg"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:text="Registeration Form"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/lblfName"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Employee First Name"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/lblReg"
+        android:gravity="center"
+        />
+    <EditText
+        android:id="@+id/txtfName"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/lblReg"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/lblfName"
+        android:hint="first name" />
+    <TextView
+        android:id="@+id/lbllName"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Employee Last Name"
+        android:layout_below="@+id/lblfName"
+        android:gravity="center"/>
+    <EditText
+        android:id="@+id/txtlName"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:hint="last name"
+        android:layout_toRightOf="@+id/lblfName"
+        android:layout_below="@+id/lblfName" />
+    <TextView
+        android:id="@+id/lblBYear"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Employee Birth Year"
+        android:layout_below="@+id/lbllName"
+        android:gravity="center"/>
+    <EditText
+        android:id="@+id/txtBYear"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/lbllName"
+        android:layout_toRightOf="@+id/lbllName"
+        android:hint="birth year"
+        android:inputType="number" />
+
+
+</ScrollView>
