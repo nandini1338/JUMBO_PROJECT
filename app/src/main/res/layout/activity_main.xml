@@ -63,6 +63,65 @@
         android:layout_toRightOf="@+id/lbllName"
         android:hint="birth year"
         android:inputType="number" />
+    <TextView
+        android:id="@+id/lblMSalary"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Monthly Salary"
+        android:layout_below="@+id/lblBYear"
+        android:gravity="center"/>
+    <EditText
+        android:id="@+id/txtMSalary"
+        android:inputType="number"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:hint="monthly salary"
+        android:layout_toRightOf="@+id/lblMSalary"
+        android:layout_below="@+id/lblBYear" />
+    <TextView
+        android:id="@+id/lblORate"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Occupation Rate"
+        android:layout_below="@+id/lblMSalary"
+        android:gravity="center"/>
+    <EditText
+        android:id="@+id/txtORate"
+        android:inputType="number"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:hint="occupation rate"
+        android:layout_toRightOf="@+id/lblORate"
+        android:layout_below="@+id/lblMSalary" />
+    <TextView
+        android:id="@+id/lblEId"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Employee ID"
+        android:layout_below="@+id/lblORate"
+        android:gravity="center"/>
+    <EditText
+        android:id="@+id/txtEId"
+        android:inputType="number"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:hint="employee id"
+        android:layout_toRightOf="@+id/lblEId"
+        android:layout_below="@+id/lblORate" />
+    <TextView
+        android:id="@+id/lblEType"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Employee Type"
+        android:layout_below="@+id/lblEId"
+        android:gravity="center"/>
+    <Spinner
+        android:id="@+id/spinnerEType"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/lblEType"
+        android:layout_below="@id/lblEId"
+        />
 
 
 </ScrollView>
