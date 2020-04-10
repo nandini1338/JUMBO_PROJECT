@@ -46,5 +46,13 @@ public class Employee extends AppCompatActivity {
         annualsalary = monthlySalary *12;
     }
 
+    public void activity_store(Intent intent)
+    {
+        intent.putExtra("Name",name);
+        intent.putExtra("Age", String.valueOf(age));
+        intent .putExtra("AIncome",String.valueOf(annualsalary));
+        intent.putExtra("OccRate",rate);
+    }
+
 
 }
