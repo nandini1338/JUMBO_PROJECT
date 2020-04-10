@@ -36,4 +36,13 @@ public class Tester extends Employee {
         nbBugs = Integer.parseInt(txtbno.getText().toString());
     }
 
+
+    public void activity_store(Intent intent)
+    {
+        super.activity_store(intent);
+        car.activity_store(intent);
+        motorcycle.activity_store(intent);
+        intent.putExtra("Performance","He/She has corrected "+nbBugs+" bugs");
+    }
+
 }
