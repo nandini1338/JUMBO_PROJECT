@@ -301,6 +301,14 @@
         android:layout_toRightOf="@+id/lblVColor"
         android:layout_below="@id/lblPlateNo"
         />
+    <Button
+        android:id="@+id/btnReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblVColor"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="REGISTER" />
 
 
 </ScrollView>
