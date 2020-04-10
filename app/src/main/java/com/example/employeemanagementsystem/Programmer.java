@@ -35,7 +35,7 @@ public class Programmer extends Employee {
         motorcycle.activity_store(intent);
         intent.putExtra("Performance", "He/She has completed " + nbProjects + " projects");
     }
-    
+
     public void set(Intent intent, Bundle bundle, TextView txtname, TextView txtage, TextView txtaIncome, TextView txtrate, TextView txtperformance,TextView txtmodel,TextView txtplate,TextView txtvtype,TextView txtcolor,TextView txttype)
     {
         super.set(intent,bundle,txtname,txtage,txtaIncome,txtrate);
