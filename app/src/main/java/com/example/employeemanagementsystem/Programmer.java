@@ -12,24 +12,28 @@ public class Programmer extends Employee {
     MotorCycle motorcycle = new MotorCycle();
 
 
-    Programmer()
-    {
+    Programmer() {
         nbProjects = 0;
     }
 
-}
-
-    public void get(EditText txtfname,EditText txtlname,EditText txtbyer,EditText txtmsalary,EditText txtorate,EditText txtpno, EditText txtcartype,EditText txtvmodel,EditText txtplateno,String txtsidecar)
-    {
-        super.get(txtfname,txtlname,txtbyer,txtmsalary,txtorate);
-        if(Vehicle.category == "Car")
-        {
-            car.get(txtcartype,txtvmodel,txtplateno);
-        }
-        else if(Vehicle.category == "Motor Cycle")
-        {
-            motorcycle.get(txtvmodel,txtplateno,txtsidecar);
+    public void get(EditText txtfname, EditText txtlname, EditText txtbyer, EditText txtmsalary, EditText txtorate, EditText txtpno, EditText txtcartype, EditText txtvmodel, EditText txtplateno, String txtsidecar) {
+        super.get(txtfname, txtlname, txtbyer, txtmsalary, txtorate);
+        if (Vehicle.category == "Car") {
+            car.get(txtcartype, txtvmodel, txtplateno);
+        } else if (Vehicle.category == "Motor Cycle") {
+            motorcycle.get(txtvmodel, txtplateno, txtsidecar);
         }
         nbProjects = Integer.parseInt(txtpno.getText().toString());
     }
 
+
+    public void activity_store(Intent intent) {
+        super.activity_store(intent);
+        if (Vehicle.category.equals("Car")) {
+            car.activity_store(intent);
+        }
+        motorcycle.activity_store(intent);
+        intent.putExtra("Performance", "He/She has completed " + nbProjects + " projects");
+    }
+    
+}
