@@ -30,3 +30,11 @@ public class Manager extends Employee {
         }
         nbClients = Integer.parseInt(txtcno.getText().toString());
     }
+
+    public void activity_store(Intent intent)
+    {
+        super.activity_store(intent);
+        car.activity_store(intent);
+        motorcycle.activity_store(intent);
+        intent.putExtra("Performance","He/She has bought "+nbClients+" clients");
+    }
