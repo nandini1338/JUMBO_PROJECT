@@ -17,5 +17,19 @@ public class Programmer extends Employee {
         nbProjects = 0;
     }
 
-
 }
+
+    public void get(EditText txtfname,EditText txtlname,EditText txtbyer,EditText txtmsalary,EditText txtorate,EditText txtpno, EditText txtcartype,EditText txtvmodel,EditText txtplateno,String txtsidecar)
+    {
+        super.get(txtfname,txtlname,txtbyer,txtmsalary,txtorate);
+        if(Vehicle.category == "Car")
+        {
+            car.get(txtcartype,txtvmodel,txtplateno);
+        }
+        else if(Vehicle.category == "Motor Cycle")
+        {
+            motorcycle.get(txtvmodel,txtplateno,txtsidecar);
+        }
+        nbProjects = Integer.parseInt(txtpno.getText().toString());
+    }
+
