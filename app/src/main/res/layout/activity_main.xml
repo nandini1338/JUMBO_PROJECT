@@ -1,314 +1,320 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <TextView
-        android:id="@+id/lblReg"
-        android:layout_width="200dp"
-        android:layout_height="25dp"
-        android:layout_centerHorizontal="true"
-        android:gravity="center"
-        android:textAlignment="center"
-        android:text="Registeration Form"
-        android:textSize="20dp"
-        android:layout_marginTop="5dp" />
-
-    <TextView
-        android:id="@+id/lblfName"
-        android:layout_width="150dp"
-        android:layout_height="40dp"
-        android:text="Employee First Name"
-        android:layout_marginTop="15dp"
-        android:layout_below="@+id/lblReg"
-        android:gravity="center"
-        />
-    <EditText
-        android:id="@+id/txtfName"
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:layout_below="@+id/lblReg"
-        android:layout_marginTop="10dp"
-        android:layout_toRightOf="@+id/lblfName"
-        android:hint="first name" />
-    <TextView
-        android:id="@+id/lbllName"
-        android:layout_width="150dp"
-        android:layout_height="40dp"
-        android:text="Employee Last Name"
-        android:layout_below="@+id/lblfName"
-        android:gravity="center"/>
-    <EditText
-        android:id="@+id/txtlName"
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:hint="last name"
-        android:layout_toRightOf="@+id/lblfName"
-        android:layout_below="@+id/lblfName" />
-    <TextView
-        android:id="@+id/lblBYear"
-        android:layout_width="150dp"
-        android:layout_height="40dp"
-        android:text="Employee Birth Year"
-        android:layout_below="@+id/lbllName"
-        android:gravity="center"/>
-    <EditText
-        android:id="@+id/txtBYear"
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:layout_below="@+id/lbllName"
-        android:layout_toRightOf="@+id/lbllName"
-        android:hint="birth year"
-        android:inputType="number" />
-    <TextView
-        android:id="@+id/lblMSalary"
-        android:layout_width="150dp"
-        android:layout_height="40dp"
-        android:text="Monthly Salary"
-        android:layout_below="@+id/lblBYear"
-        android:gravity="center"/>
-    <EditText
-        android:id="@+id/txtMSalary"
-        android:inputType="number"
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:hint="monthly salary"
-        android:layout_toRightOf="@+id/lblMSalary"
-        android:layout_below="@+id/lblBYear" />
-    <TextView
-        android:id="@+id/lblORate"
-        android:layout_width="150dp"
-        android:layout_height="40dp"
-        android:text="Occupation Rate"
-        android:layout_below="@+id/lblMSalary"
-        android:gravity="center"/>
-    <EditText
-        android:id="@+id/txtORate"
-        android:inputType="number"
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:hint="occupation rate"
-        android:layout_toRightOf="@+id/lblORate"
-        android:layout_below="@+id/lblMSalary" />
-    <TextView
-        android:id="@+id/lblEId"
-        android:layout_width="150dp"
-        android:layout_height="40dp"
-        android:text="Employee ID"
-        android:layout_below="@+id/lblORate"
-        android:gravity="center"/>
-    <EditText
-        android:id="@+id/txtEId"
-        android:inputType="number"
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:hint="employee id"
-        android:layout_toRightOf="@+id/lblEId"
-        android:layout_below="@+id/lblORate" />
-    <TextView
-        android:id="@+id/lblEType"
-        android:layout_width="150dp"
-        android:layout_height="40dp"
-        android:text="Employee Type"
-        android:layout_below="@+id/lblEId"
-        android:gravity="center"/>
-    <Spinner
-        android:id="@+id/spinnerEType"
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:layout_toRightOf="@+id/lblEType"
-        android:layout_below="@id/lblEId"
-        />
-    <TextView
-        android:id="@+id/lblPNo"
-        android:layout_width="150dp"
-        android:layout_height="40dp"
-        android:text="Project #"
-        android:layout_below="@+id/lblEType"
-        android:gravity="center"
-        android:visibility="gone"/>
-    <EditText
-        android:id="@+id/txtPNo"
-        android:inputType="number"
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:hint="project#"
-        android:layout_toRightOf="@+id/lblPNo"
-        android:layout_below="@+id/lblEType"
-        android:visibility="gone"/>
-    <TextView
-        android:id="@+id/lblCNo"
-        android:layout_width="150dp"
-        android:layout_height="40dp"
-        android:text="Client #"
-        android:layout_below="@+id/lblEType"
-        android:gravity="center"
-        android:visibility="gone"/>
-    <EditText
-        android:id="@+id/txtCNo"
-        android:inputType="number"
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:hint="client#"
-        android:layout_toRightOf="@+id/lblCNo"
-        android:layout_below="@+id/lblEType"
-        android:visibility="gone"/>
-    <TextView
-        android:id="@+id/lblBNo"
-        android:layout_width="150dp"
-        android:layout_height="40dp"
-        android:text="Bugs #"
-        android:layout_below="@+id/lblEType"
-        android:gravity="center"
-        android:visibility="gone"/>
-    <EditText
-        android:id="@+id/txtBNo"
-        android:inputType="number"
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:hint="bugs#"
-        android:layout_toRightOf="@+id/lblBNo"
-        android:layout_below="@+id/lblEType"
-        android:visibility="gone"/>
-    <TextView
-        android:id="@+id/lblVType"
-        android:layout_width="150dp"
-        android:layout_height="40dp"
-        android:text="Vehicle"
-        android:layout_below="@+id/lblEType"
-        android:layout_marginTop="75dp"
-        android:gravity="center"
-        android:layout_marginBottom="5dp"/>
-
-    <RadioGroup
-        android:id="@+id/rdogrpVType"
-        android:layout_width="250dp"
-        android:layout_height="80dp"
-        android:layout_below="@id/lblEType"
-        android:layout_marginBottom="5dp"
-        android:layout_marginLeft="0dp"
-        android:layout_toRightOf="@+id/lblVType"
-        android:layout_marginTop="50dp">
-
-        <RadioButton
-            android:id="@+id/rdobtnCar"
-            android:layout_width="75dp"
-            android:layout_height="40dp"
-            android:text="Car" />
-
-        <RadioButton
-            android:id="@+id/rdobtnMCycle"
-            android:layout_width="140dp"
-            android:layout_height="40dp"
-            android:text="Motor Cycle" />
-    </RadioGroup>
-
-    <TextView
-        android:id="@+id/lblCarType"
-        android:layout_width="150dp"
-        android:layout_height="40dp"
-        android:text="Car Type"
-        android:layout_below="@+id/lblVType"
-        android:gravity="center"
-        android:visibility="gone"/>
-    <EditText
-        android:id="@+id/txtCarType"
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:hint="type"
-        android:layout_toRightOf="@+id/lblCarType"
-        android:layout_below="@+id/lblVType"
-        android:visibility="gone"/>
-
-    <TextView
-        android:id="@+id/lblSideCar"
-        android:layout_width="150dp"
-        android:layout_height="40dp"
-        android:layout_below="@+id/lblCarType"
-        android:layout_marginTop="25dp"
-        android:layout_marginBottom="5dp"
-        android:gravity="center"
-        android:text="Side Car"
-        android:visibility="gone"/>
-
-    <RadioGroup
-        android:id="@+id/rdogrpSideCar"
-        android:layout_width="250dp"
-        android:layout_height="80dp"
-        android:layout_toRightOf="@+id/lblSideCar"
-        android:layout_below="@id/lblCarType"
-        android:layout_marginBottom="5dp"
-        android:visibility="gone">
-        <RadioButton
-            android:id="@+id/rdobtnYes"
-            android:layout_width="75dp"
-            android:layout_height="40dp"
-            android:text="YES" />
-
-        <RadioButton
-            android:id="@+id/rdobtnNo"
-            android:layout_width="140dp"
-            android:layout_height="40dp"
-            android:text="NO"
-            />
-    </RadioGroup>
-
-
-    <TextView
-        android:id="@+id/lblVModel"
-        android:layout_width="150dp"
-        android:layout_height="40dp"
-        android:text="Vehicle Model"
-        android:layout_marginTop="75dp"
-        android:layout_below="@+id/lblVType"
-        android:gravity="center"/>
-    <EditText
-        android:id="@+id/txtVModel"
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:hint="model"
-        android:layout_marginTop="75dp"
-        android:layout_toRightOf="@+id/lblVModel"
-        android:layout_below="@+id/lblVType" />
-    <TextView
-        android:id="@+id/lblPlateNo"
-        android:layout_width="150dp"
-        android:layout_height="40dp"
-        android:text="Plate Number"
-        android:layout_below="@+id/lblVModel"
-        android:gravity="center"/>
-    <EditText
-        android:id="@+id/txtPlateNo"
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:hint="plate number"
-        android:layout_toRightOf="@+id/lblPlateNo"
-        android:layout_below="@+id/lblVModel" />
-    <TextView
-        android:id="@+id/lblVColor"
-        android:layout_width="150dp"
-        android:layout_height="40dp"
-        android:text="Vehicle Color"
-        android:layout_below="@+id/lblPlateNo"
-        android:gravity="center"/>
-    <Spinner
-        android:id="@+id/spinnerVColor"
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:layout_toRightOf="@+id/lblVColor"
-        android:layout_below="@id/lblPlateNo"
-        />
-    <Button
-        android:id="@+id/btnReg"
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/lblVColor"
-        android:layout_alignParentBottom="true"
-        android:gravity="center"
-        android:text="REGISTER" />
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        >
+
+        <TextView
+            android:id="@+id/lblReg"
+            android:layout_width="200dp"
+            android:layout_height="25dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:text="Registeration Form"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/lblfName"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Employee First Name"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/lblReg"
+            android:gravity="center"
+            />
+
+        <EditText
+            android:id="@+id/txtfName"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/lblReg"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/lblfName"
+            android:hint="first name" />
+        <TextView
+            android:id="@+id/lbllName"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Employee Last Name"
+            android:layout_below="@+id/lblfName"
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/txtlName"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:hint="last name"
+            android:layout_toRightOf="@+id/lblfName"
+            android:layout_below="@+id/lblfName" />
+        <TextView
+            android:id="@+id/lblBYear"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Employee Birth Year"
+            android:layout_below="@+id/lbllName"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/txtBYear"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/lbllName"
+            android:layout_toRightOf="@+id/lbllName"
+            android:hint="birth year"
+            android:inputType="number" />
+        <TextView
+            android:id="@+id/lblMSalary"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Monthly Salary"
+            android:layout_below="@+id/lblBYear"
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/txtMSalary"
+            android:inputType="number"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:hint="monthly salary"
+            android:layout_toRightOf="@+id/lblMSalary"
+            android:layout_below="@+id/lblBYear" />
+        <TextView
+            android:id="@+id/lblORate"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Occupation Rate"
+            android:layout_below="@+id/lblMSalary"
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/txtORate"
+            android:inputType="number"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:hint="occupation rate"
+            android:layout_toRightOf="@+id/lblORate"
+            android:layout_below="@+id/lblMSalary" />
+        <TextView
+            android:id="@+id/lblEId"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Employee ID"
+            android:layout_below="@+id/lblORate"
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/txtEId"
+            android:inputType="number"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:hint="employee id"
+            android:layout_toRightOf="@+id/lblEId"
+            android:layout_below="@+id/lblORate" />
+        <TextView
+            android:id="@+id/lblEType"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Employee Type"
+            android:layout_below="@+id/lblEId"
+            android:gravity="center"/>
+        <Spinner
+            android:id="@+id/spinnerEType"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/lblEType"
+            android:layout_below="@id/lblEId"
+            />
+        <TextView
+            android:id="@+id/lblPNo"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Project #"
+            android:layout_below="@+id/lblEType"
+            android:gravity="center"
+            android:visibility="gone"/>
+        <EditText
+            android:id="@+id/txtPNo"
+            android:inputType="number"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:hint="project#"
+            android:layout_toRightOf="@+id/lblPNo"
+            android:layout_below="@+id/lblEType"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/lblCNo"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Client #"
+            android:layout_below="@+id/lblEType"
+            android:gravity="center"
+            android:visibility="gone"/>
+        <EditText
+            android:id="@+id/txtCNo"
+            android:inputType="number"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:hint="client#"
+            android:layout_toRightOf="@+id/lblCNo"
+            android:layout_below="@+id/lblEType"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/lblBNo"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Bugs #"
+            android:layout_below="@+id/lblEType"
+            android:gravity="center"
+            android:visibility="gone"/>
+        <EditText
+            android:id="@+id/txtBNo"
+            android:inputType="number"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:hint="bugs#"
+            android:layout_toRightOf="@+id/lblBNo"
+            android:layout_below="@+id/lblEType"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/lblVType"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Vehicle"
+            android:layout_below="@+id/lblEType"
+            android:layout_marginTop="75dp"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"/>
+
+        <RadioGroup
+            android:id="@+id/rdogrpVType"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/lblEType"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="0dp"
+            android:layout_toRightOf="@+id/lblVType"
+            android:layout_marginTop="50dp">
+
+            <RadioButton
+                android:id="@+id/rdobtnCar"
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:text="Car" />
+
+            <RadioButton
+                android:id="@+id/rdobtnMCycle"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:text="Motor Cycle" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/lblCarType"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Car Type"
+            android:layout_below="@+id/lblVType"
+            android:gravity="center"
+            android:visibility="gone"/>
+        <EditText
+            android:id="@+id/txtCarType"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:hint="type"
+            android:layout_toRightOf="@+id/lblCarType"
+            android:layout_below="@+id/lblVType"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/lblSideCar"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/lblCarType"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="Side Car"
+            android:visibility="gone"/>
+        <RadioGroup
+            android:id="@+id/rdogrpSideCar"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:layout_toRightOf="@+id/lblSideCar"
+            android:layout_below="@id/lblCarType"
+            android:layout_marginBottom="5dp"
+            android:visibility="gone">
+            <RadioButton
+                android:id="@+id/rdobtnYes"
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:text="YES" />
+
+            <RadioButton
+                android:id="@+id/rdobtnNo"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:text="NO"
+                />
+        </RadioGroup>
 
 
+        <TextView
+            android:id="@+id/lblVModel"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Vehicle Model"
+            android:layout_marginTop="75dp"
+            android:layout_below="@+id/lblVType"
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/txtVModel"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:hint="model"
+            android:layout_marginTop="75dp"
+            android:layout_toRightOf="@+id/lblVModel"
+            android:layout_below="@+id/lblVType" />
+        <TextView
+            android:id="@+id/lblPlateNo"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Plate Number"
+            android:layout_below="@+id/lblVModel"
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/txtPlateNo"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:hint="plate number"
+            android:layout_toRightOf="@+id/lblPlateNo"
+            android:layout_below="@+id/lblVModel" />
+        <TextView
+            android:id="@+id/lblVColor"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Vehicle Color"
+            android:layout_below="@+id/lblPlateNo"
+            android:gravity="center"/>
+        <Spinner
+            android:id="@+id/spinnerVColor"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/lblVColor"
+            android:layout_below="@id/lblPlateNo"
+            />
+
+        <Button
+            android:id="@+id/btnReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblVColor"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="REGISTER" />
+    </RelativeLayout>
 </ScrollView>
