@@ -36,4 +36,19 @@ public class Programmer extends Employee {
         intent.putExtra("Performance", "He/She has completed " + nbProjects + " projects");
     }
     
+    public void set(Intent intent, Bundle bundle, TextView txtname, TextView txtage, TextView txtaIncome, TextView txtrate, TextView txtperformance,TextView txtmodel,TextView txtplate,TextView txtvtype,TextView txtcolor,TextView txttype)
+    {
+        super.set(intent,bundle,txtname,txtage,txtaIncome,txtrate);
+        if(Vehicle.category.equals("Car"))
+        {
+            car.set(intent,bundle,txtmodel,txtplate,txtvtype,txtcolor,txttype);
+        }
+        else if(Vehicle.category.equals("Motor Cycle"))
+        {
+            motorcycle.set(intent,bundle,txtmodel,txtplate,txtvtype,txtcolor,txttype);
+        }
+        String tempperformance = bundle.getString("Performance");
+        txtperformance.setText(tempperformance);
+    }
+
 }
