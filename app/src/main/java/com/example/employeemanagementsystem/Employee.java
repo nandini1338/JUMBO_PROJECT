@@ -17,7 +17,6 @@ import java.util.Calendar;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Employee extends AppCompatActivity {
-
     static String name;
     static int age;
     private int birthYear;
@@ -26,44 +25,4 @@ public class Employee extends AppCompatActivity {
     static double annualsalary;
     static String emptype;
 
-    Employee()
-    {
-        name = "";
-        age = 0;
-        birthYear = 0;
-        monthlySalary = 0.0;
-        rate = "";
-    }
-
-    public void get(EditText txtfname,EditText txtlname,EditText txtbyer,EditText txtmsalary,EditText txtorate)
-    {
-        String fname = txtfname.getText().toString();
-        String lname = txtlname.getText().toString();
-        name = fname.concat(" ".concat(lname));
-        birthYear = Integer.parseInt(txtbyer.getText().toString());
-        age = Calendar.getInstance().get(Calendar.YEAR) - birthYear;
-        monthlySalary = Double.parseDouble(txtmsalary.getText().toString());
-        rate = txtorate.getText().toString();
-        annualsalary = monthlySalary *12;
-    }
-
-    public void activity_store(Intent intent)
-    {
-        intent.putExtra("Name",name);
-        intent.putExtra("Age", String.valueOf(age));
-        intent .putExtra("AIncome",String.valueOf(annualsalary));
-        intent.putExtra("OccRate",rate);
-    }
-
-    public void set(Intent intent, Bundle bundle, TextView txtname,TextView txtage,TextView txtaIncome,TextView txtrate)
-    {
-        String tmpname = bundle.getString("Name");
-        String tmpage = bundle.getString("Age");
-        String tmpannualIncome = bundle.getString("AIncome");
-        String tmprate = bundle.getString("OccRate");
-        txtname.setText(tmpname);
-        txtage.setText(tmpage);
-        txtaIncome.setText(tmpannualIncome);
-        txtrate.setText(tmprate);
-    }
 }
