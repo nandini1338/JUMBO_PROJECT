@@ -45,4 +45,12 @@ public class Tester extends Employee {
         intent.putExtra("Performance","He/She has corrected "+nbBugs+" bugs");
     }
 
+    public void set(Intent intent, Bundle bundle, TextView txtname, TextView txtage, TextView txtaIncome, TextView txtrate, TextView txtperformance,TextView txtmodel,TextView txtplate,TextView txtvtype,TextView txtcolor,TextView txttype)
+    {
+        super.set(intent,bundle,txtname,txtage,txtaIncome,txtrate);
+        car.set(intent,bundle,txtmodel,txtplate,txtvtype,txtcolor,txttype);
+        String tempperformance = bundle.getString("Performance");
+        txtperformance.setText(tempperformance);
+    }
+
 }
