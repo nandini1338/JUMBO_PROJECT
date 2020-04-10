@@ -17,3 +17,16 @@ public class Manager extends Employee {
         nbClients = 0;
     }
 
+    public void get(EditText txtfname,EditText txtlname,EditText txtbyer,EditText txtmsalary,EditText txtorate,EditText txtcno, EditText txtcartype,EditText txtvmodel,EditText txtplateno,String txtsidecar)
+    {
+        super.get(txtfname,txtlname,txtbyer,txtmsalary,txtorate);
+        if(Vehicle.category.equals("Car"))
+        {
+            car.get(txtcartype,txtvmodel,txtplateno);
+        }
+        else if(Vehicle.category.equals("Motor Cycle"))
+        {
+            motorcycle.get(txtvmodel,txtplateno,txtsidecar);
+        }
+        nbClients = Integer.parseInt(txtcno.getText().toString());
+    }
