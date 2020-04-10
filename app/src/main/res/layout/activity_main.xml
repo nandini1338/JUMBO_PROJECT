@@ -173,6 +173,66 @@
         android:layout_toRightOf="@+id/lblBNo"
         android:layout_below="@+id/lblEType"
         android:visibility="gone"/>
+    <TextView
+        android:id="@+id/lblVType"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Vehicle"
+        android:layout_below="@+id/lblEType"
+        android:layout_marginTop="75dp"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"/>
+
+    <RadioGroup
+        android:id="@+id/rdogrpVType"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/lblEType"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="0dp"
+        android:layout_toRightOf="@+id/lblVType"
+        android:layout_marginTop="50dp">
+
+        <RadioButton
+            android:id="@+id/rdobtnCar"
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:text="Car" />
+
+        <RadioButton
+            android:id="@+id/rdobtnMCycle"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:text="Motor Cycle" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/lblCarType"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Car Type"
+        android:layout_below="@+id/lblVType"
+        android:gravity="center"
+        android:visibility="gone"/>
+    <EditText
+        android:id="@+id/txtCarType"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:hint="type"
+        android:layout_toRightOf="@+id/lblCarType"
+        android:layout_below="@+id/lblVType"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/lblSideCar"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/lblCarType"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="Side Car"
+        android:visibility="gone"/>
 
 
 </ScrollView>
