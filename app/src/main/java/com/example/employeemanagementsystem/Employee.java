@@ -24,5 +24,6 @@ public class Employee extends AppCompatActivity {
     private String rate;
     static double annualsalary;
     static String emptype;
+    
 
 }
