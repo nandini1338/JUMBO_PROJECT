@@ -34,5 +34,17 @@ public class Employee extends AppCompatActivity {
         rate = "";
     }
 
+    public void get(EditText txtfname,EditText txtlname,EditText txtbyer,EditText txtmsalary,EditText txtorate)
+    {
+        String fname = txtfname.getText().toString();
+        String lname = txtlname.getText().toString();
+        name = fname.concat(" ".concat(lname));
+        birthYear = Integer.parseInt(txtbyer.getText().toString());
+        age = Calendar.getInstance().get(Calendar.YEAR) - birthYear;
+        monthlySalary = Double.parseDouble(txtmsalary.getText().toString());
+        rate = txtorate.getText().toString();
+        annualsalary = monthlySalary *12;
+    }
+
 
 }
