@@ -10,6 +10,13 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
+    Programmer programmer = new Programmer();
+    Tester tester = new Tester();
+    Manager manager = new Manager();
+    String txtsidecar = new String();
+    String Vcategory = new String();
+    String Vcolor = new String();
+    DataHelper myDB ;
 
 
     @Override
