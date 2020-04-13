@@ -53,6 +53,16 @@ public class MainActivity extends AppCompatActivity {
                 final EditText txtCNo = findViewById(R.id.txtCNo);
                 final TextView lblProjNo = findViewById(R.id.lblPNo);
                 final EditText txtProjNo = findViewById(R.id.txtPNo);
+
+                if(tutorialsName == "Programmer")
+                {
+                    lblBNo.setVisibility(View.GONE);
+                    txtBNo.setVisibility(View.GONE);
+                    lblCNo.setVisibility(View.GONE);
+                    txtCNo.setVisibility(View.GONE);
+                    lblProjNo.setVisibility(View.VISIBLE);
+                    txtProjNo.setVisibility(View.VISIBLE);
+                }
             }
 
 
