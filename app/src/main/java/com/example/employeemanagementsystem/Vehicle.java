@@ -35,3 +35,22 @@ public class Vehicle extends Employee {
         make = txtmodel.getText().toString();
         plate = txtplateno.getText().toString();
     }
+    public void activity_store(Intent intent)
+    {
+        intent.putExtra("Model",make);
+        intent.putExtra("Plate",plate);
+        intent.putExtra("Category","Employee has a ".concat(" ".concat(category)));
+        intent.putExtra("Color",color);
+    }
+    public void set(Intent intent, Bundle bundle, TextView txtmodel,TextView txtplate,TextView txtcategory,TextView txtcolor)
+    {
+        String tmpmodel = bundle.getString("Model");
+        String tmpplate = bundle.getString("Plate");
+        String tmpcategory = bundle.getString("Category");
+        String tmpcolor = bundle.getString("Color");
+        txtmodel.setText(tmpmodel);
+        txtplate.setText(tmpplate);
+        txtcategory.setText(tmpcategory);
+        txtcolor.setText(tmpcolor);
+    }
+}
