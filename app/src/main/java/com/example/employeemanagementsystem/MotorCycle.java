@@ -36,7 +36,7 @@ public class MotorCycle extends Vehicle {
     public void set(Intent intent, Bundle bundle, TextView txtmodel,TextView txtplate,TextView txtcategory,TextView txtcolor,TextView txtsidecar)
     {
         super.set(intent,bundle,txtmodel,txtplate,txtcategory,txtcolor);
-        String tmptype = bundle.getString("YES");
+        String tmptype = bundle.getString("TYPE");
         txtsidecar.setText(tmptype);
     }
 
