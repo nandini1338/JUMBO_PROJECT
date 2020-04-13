@@ -21,3 +21,15 @@ public class MotorCycle extends Vehicle {
         super.get(txtmodel,txtplateno);
         sideCar = txtsidecar;
     }
+    public void activity_store(Intent intent)
+    {
+        super.activity_store(intent);
+        if(sideCar.equals("YES"))
+        {
+            intent.putExtra("Type","With Side Car");
+        }
+        else if(sideCar.equals("NO"))
+        {
+            intent.putExtra("Type","Without Side Car");
+        }
+    }
