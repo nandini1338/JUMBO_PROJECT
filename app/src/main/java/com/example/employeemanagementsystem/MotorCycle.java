@@ -33,9 +33,9 @@ public class MotorCycle extends Vehicle {
             intent.putExtra("Type","Without Side Car");
         }
     }
-    public void set(Intent intent, Bundle bundle, TextView txtmodel,TextView txtcategory,TextView txtcolor,TextView txtsidecar)
+    public void set(Intent intent, Bundle bundle, TextView txtmodel,TextView txtplate,TextView txtcategory,TextView txtcolor,TextView txtsidecar)
     {
-        super.set(intent,bundle,txtmodel,txtcategory,txtcolor);
+        super.set(intent,bundle,txtmodel,txtplate,txtcategory,txtcolor);
         String tmptype = bundle.getString("YES");
         txtsidecar.setText(tmptype);
     }
