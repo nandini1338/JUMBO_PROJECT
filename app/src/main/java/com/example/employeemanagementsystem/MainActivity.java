@@ -63,6 +63,17 @@ public class MainActivity extends AppCompatActivity {
                     lblProjNo.setVisibility(View.VISIBLE);
                     txtProjNo.setVisibility(View.VISIBLE);
                 }
+
+                else if(tutorialsName == "Tester")
+                {
+                    lblProjNo.setVisibility(View.GONE);
+                    txtProjNo.setVisibility(View.GONE);
+                    lblCNo.setVisibility(View.GONE);
+                    txtCNo.setVisibility(View.GONE);
+
+                    lblBNo.setVisibility(View.VISIBLE);
+                    txtBNo.setVisibility(View.VISIBLE);
+                }
             }
 
 
