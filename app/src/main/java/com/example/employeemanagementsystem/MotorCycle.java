@@ -16,8 +16,8 @@ public class MotorCycle extends Vehicle {
     {
         sideCar = "";
     }
-    public void get(EditText txtplateno,String txtsidecar)
+    public void get(EditText txtmodel,EditText txtplateno,String txtsidecar)
     {
-
+        super.get(txtmodel,txtplateno);
         sideCar = txtsidecar;
     }
