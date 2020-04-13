@@ -30,3 +30,8 @@ public class Vehicle extends Employee {
         color = "";
         category = "";
     }
+    public void get(EditText txtmodel,EditText txtplateno)
+    {
+        make = txtmodel.getText().toString();
+        plate = txtplateno.getText().toString();
+    }
