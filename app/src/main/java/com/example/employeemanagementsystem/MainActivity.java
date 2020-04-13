@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.provider.CalendarContract;
 import android.util.Log;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 
 import java.util.ArrayList;
 
@@ -32,5 +34,30 @@ public class MainActivity extends AppCompatActivity {
         arrayList.add("Manager");
         arrayList.add("Tester");
         arrayList.add("Programmer");
+        
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item, arrayList);
+        arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        final Spinner spinner = findViewById(R.id.spinnerEType);
+        spinner.setAdapter(arrayAdapter);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }
