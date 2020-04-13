@@ -20,8 +20,9 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Vehicle extends Employee {
     public static String make;
     public static String plate;
-    public static String color;
     public static String category;
+    public static String color;
+
 
     Vehicle()
     {
